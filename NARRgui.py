@@ -6,6 +6,8 @@
 #Also, sometimes the images and titles get a bit squished when they pop up in the graphics window. If you hit the button to change 
 #the layout and select tight layout the problem usually resolves itself.
 
+#Code on github at https://github.com/mwilson14/NARR_GUI
+
 
 #First, let's set up a GUI using Tkinter
 import Tkinter as tk
