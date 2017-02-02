@@ -104,13 +104,13 @@ def ready():
     event = type.get()
     map_area = area.get()
     step_s = tstep.get()
-    print year
-    print month
-    print day
-    print UTC
-    print event
-    print map_area
-    print step_s
+    print(year)
+    print(month)
+    print(day)
+    print(UTC)
+    print(event)
+    print(map_area)
+    print(step_s)
     return year, month, day, UTC, event, map_area, step_s
 b = tk.Button(top, text = "Enter", command = ready)
 b.pack(side = tk.LEFT)
@@ -201,11 +201,11 @@ print(n)
 itime = np.where(times == date2num(datetime.datetime(iyear,imonth,iday,iUTC),time.units))
 itime2 = np.where(mtimes == date2num(datetime.datetime(iyear,imonth,iday,iUTC),time.units))
 
-print itime
+print(itime)
 
-print time[itime]
-print itime2
-print time[itime2]
+print(time[itime])
+print(itime2)
+print(time[itime2])
 #Now let's create the basemap
 LLlat = -90
 LLlon = 0
@@ -395,7 +395,7 @@ for i in range(step):
         dy = np.array(np.gradient(vu[0,l,:,:]))
         #eventually, I'll calculate vorticity the correct way by accounting for the variable lat/lon grid spacing, but this at least provides a good idea of where stuff is.
         vort = ((dy/32500)-(dx/32500))*100000
-        print vort
+        print(vort)
         plt.figure(a,figsize=(30,24))
         plt.style.use('bmh')
         m.drawcoastlines(linewidth=0.5)
