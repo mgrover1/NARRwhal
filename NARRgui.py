@@ -279,7 +279,7 @@ for i in range(step):
    #first we have temperature
    airk = temp2.variables['air'][itime]
    airf = (airk-273.15)*(9.0/5.0)+32
-   print np.shape(airf)
+#   print np.shape(airf)
    #Now we'll bring in pressure
    mslp = slp.variables['prmsl'][itime]
    msl = mslp/100
